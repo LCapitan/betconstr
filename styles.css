@@ -1,0 +1,871 @@
+/*
+    Austin Melendez
+    ===============
+    betconstruct.com
+    Code Challenge
+    June 3, 2016
+    Github: LCapitan
+*/
+
+/*
+    Colors:
+
+    blue (navbar): #3395d7
+    light blue (body): #5ab3e1
+    green: #24a95c
+
+*/
+
+/* =======================================================================================
+ General
+======================================================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.navbar a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+background: #287eb6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:active {
+  background: #287eb6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1078px;
+}
+/* =======================================================================================
+ Header
+======================================================================================= */
+
+.navbar {
+  background: #3395d7;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #333;
+  -moz-box-shadow: 0 8px 6px -6px #333;
+  box-shadow: 0 8px 6px -6px #333;
+}
+
+.logo-head img {
+float: left;
+  margin: 30px 0;
+}
+
+.rtri {
+  position: absolute;
+  transform: translateX(428px);
+}
+
+.ltri {
+  position: absolute;
+  transform: translateX(669px);
+}
+
+.registr ul {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.registr li {
+  float: left;
+  font-size: 13px;
+  left: 240px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.registr li a {
+  background: #1a5e8b;
+  display: block;
+  padding: 11px 18px;
+}
+
+.star-list a {
+  padding: 6.7px 9px !important;
+}
+
+.noise img {
+  display: inline-block;
+  float: right;
+  margin-top: -30px;
+  position: relative;
+  top: 0;
+  transform: translateY(-15px);
+  transform: translateX(-5px);
+}
+
+.reg-border {
+  border-right: solid 1px #3395d7;
+  border-left: solid 1px #3395d7;
+}
+
+.mainmenu ul {
+  overflow: hidden;
+}
+
+.mainmenu li {
+  float: left;
+}
+
+.mainmenu li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 22px 15px 30px;
+  text-transform: uppercase;
+}
+
+.mainmenu {
+  position: relative;
+  top: 39px;
+  left: 70px;
+}
+
+.lan-en {
+  width: 90px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #1a5e8b;
+  width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.drop-content a {
+  color: black;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.drop-content a:hover {
+  background-color: #287eb6;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+
+#betsearch {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 55px;
+  left: 50px;
+
+}
+
+.bettextinput {
+  border-bottom: solid 1px #fff;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: #3395d7;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+.betbutton {
+  margin: 0;
+  margin-bottom: -10px;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.bettextinput::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+}
+
+.flag-img {
+  padding: 0 8px 0 0;
+}
+
+/* =======================================================================================
+ Body
+======================================================================================= */
+
+#hero-body {
+  padding-top: 150px;
+  margin: 0 auto 100px;
+  height: 500px;
+  background: url('../img/roullette-wheel.png') top left no-repeat;
+  background-size: cover;
+}
+
+.front-hero {
+  height: 575px;
+  background: url('../img/soccer-hero.png') top center no-repeat;
+}
+
+.update {
+  position: absolute;
+  background: url('../img/update-kit.png') top left no-repeat;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 40px 15px 50px;
+  position: relative;
+  top: 170px;
+}
+
+.update-head {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.updatetri {
+  position: relative;
+  left: -20px;
+  transform: translateX(-120px);
+  transform: translateY(453px);
+}
+
+.live-title {
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.scoreboard {
+  float: right;
+  font-size: 70px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin: -10px 10px;
+}
+
+.team-name1 {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 75px 0 15px 0;
+}
+
+.team-name2 {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.teamodds {
+  display: inline-block;
+  font-weight: 200;
+  margin-left: 25px;
+}
+
+.bluebet {
+  background: #3395d7;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 50px;
+  padding: 14px;
+}
+
+#bet-station {
+  margin-top: 200px;
+  background: #5ab3e1;
+  height: 570px;
+  width: 100%
+}
+
+#sports {
+  display: inline-block;
+  background: #fff;
+  height: 520px;
+  text-align: center;
+  position: relative;
+  top: -45px;
+  width: 330px;
+}
+
+#casino {
+  display: inline-block;
+  margin: -43px 38px 0;
+  background: #fff;
+  height: 520px;
+  text-align: center;
+  position: relative;
+  top: -45px;
+  width: 330px;
+}
+
+#poker {
+  display: inline-block;
+  background: #fff;
+  height: 520px;
+  text-align: center;
+  position: relative;
+  top: -45px;
+  width: 330px;
+}
+
+.betbartitle {
+  background: #2d5d75;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 35px 50px;
+}
+
+.bonus-buys {
+  color: #f5b724;
+  font-size: 75px;
+  font-weight: 900;
+  padding: 43px 0;
+}
+
+.betnow-txt {
+  color: #5ab3e1;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.betnwbutton {
+  background: #24a95c;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  padding: 27px 80px;
+}
+
+.yellowbox {
+  display: inline-block;
+  background: #f5b724;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  padding: 20px 40px;
+}
+
+#easy1,
+#easy2,
+#easy3 {
+  display: inline-block;
+}
+
+#easy1 p,
+#easy2 p,
+#easy3 p,
+#easy1 h4,
+#easy2 h4,
+#easy3 h4 {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+#easy1, #easy2, #easy3 {
+  float: left;
+  width: 340px;
+}
+
+#easy1 h4, #easy2 h4, #easy3 h4 {
+  position: relative;
+  top: -30px;
+  left: 70px;
+}
+
+#easy1 p, #easy2 p, #easy3 p {
+  position: relative;
+  top: -40px;
+  left: 140px;
+}
+
+#easy2 {
+  margin: 0 29px;
+}
+
+#easy1 p {
+  left: 170px;
+}
+
+#easy2 h4 {
+  left: 100px;
+}
+
+.quick-score {
+  background: #24a95c;
+  color: #fff;
+  display: block;
+  height: 265px;
+  margin: 114px 0 0 0;
+  width: 100%;
+}
+
+.tiny-date {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 20px;
+  text-align: center;
+}
+
+.game-stats h6 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 30px;
+}
+
+.namesteam {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 100px 10px 0;
+}
+
+.extranumbers {margin-right: 40px;}
+.bar1 {margin-left: 70px;}
+.bar2 {margin-left: 52px;}
+.bar3 {margin-left: 47px;}
+.team1 {margin-right: 230px;}
+.team2 {margin-right: 243px;}
+.team3 {margin-right: 254px;}
+
+.small-text {
+  font-size: 17px;
+  margin-left: 80px;
+}
+
+hr.betstats {
+  background: #135e33;
+  border: none;
+  padding: 2px;
+}
+
+/* =======================================================================================
+ News
+======================================================================================= */
+
+#news {
+  background: #e4e0e0;
+  height: 102px;
+}
+
+.news-title {
+  color: #3395d7;
+  font-weight: 200;
+  position: relative;
+  top: 40px;
+}
+
+.newsmenu ul {
+  overflow: hidden;
+}
+
+.newsmenu li {
+  float: left;
+}
+
+.newsmenu li a {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 22px 10px 30px;
+  font-weight: 200;
+}
+
+.newsmenu {
+  position: relative;
+  top: 0px;
+  left: 100px;
+}
+
+.newsmenu a:link {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newsmenu a:visited {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newsmenu a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newsmenu a:active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.more-menu {
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.more-menu a {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 22px 10px 30px;
+  font-weight: 200;
+}
+
+.more-menu a:link {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.more-menu a:visited {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.more-menu a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.more-menu a:active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bluearrrow {
+  color: #3395d7;
+}
+
+.news-head {
+  color: #000;
+  font-size: 17px;
+  text-transform: none;
+}
+
+.news-head h4 {
+  position: relative;
+}
+
+.news-tag {
+  background: #3395d7;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  top: 40px;
+  left: -7px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 3px 2px 3px 1px #333 !important;
+  -moz-box-shadow: 3px 2px 3px 1px #333 !important;
+  box-shadow: 3px 2px 3px 1px #333 !important;
+}
+
+.news-content {
+  margin: 50px auto;
+}
+
+.news-piece {
+  display: inline-block;
+  color: #000;
+  font-size: 13px;
+  font-weight: 200;
+  margin: 11px;
+  height: 290px;
+  width: 330px;
+}
+
+.news-piece img {
+  -webkit-box-shadow: 3px 2px 3px 1px #777 !important;
+  -moz-box-shadow: 3px 2px 3px 1px #777 !important;
+  box-shadow: 3px 2px 3px 1px #777 !important;
+}
+
+.news-piece a:link {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-piece a:visited {
+  color: #8b8a8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-piece a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-piece a:active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.load-mas {
+  font-size: 30px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.load-mas a:link {
+  color: #3395d7;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.load-mas a:visited {
+  color: #3395d7;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.load-mas a:hover {
+  color: #2d5d75;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.load-mas a:active {
+  color: #2d5d75;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* =======================================================================================
+ Footer
+======================================================================================= */
+
+.footbar {
+  background: #3395d7;
+  height: 120px;
+  width: 100%;
+}
+
+.logo-foot {
+  display: inline-block;
+  margin: 20px;
+}
+
+.backbtn {
+  display: inline-block;
+}
+
+.backtotop {
+  background: #000;
+  border: none;
+  color: #13a6dc;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 55px;
+  position: relative;
+  top: 20px;
+  left: 240px;
+}
+
+.backbtn a:link {
+  color: #3395d7;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.backbtn a:visited {
+  color: #3395d7;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.backbtn a:hover {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.backbtn a:active {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: inline-block;
+  float: right;
+  margin: 40px 0;
+}
+
+.youtube,
+.twitter,
+.facebook,
+.google {
+  display: inline-block;
+}
+
+.copyrights h5 {
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  position: relative;
+  top: 150px;
+  text-transform: none;
+}
+
+.disclaim {
+  text-align: center;
+}
+
+.disclaim h5 {
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  margin: 20px auto 0;
+  text-transform: none;
+}
+
+.disclaim p {
+  font-size: 11px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+.footmenu {
+  background: url('../img/footer-texture.png') top left repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.foottitle {
+  color: #fff;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+}
+
+#foot-help,
+#foot-about,
+#foot-promo {
+  display: inline-block;
+  float: left;
+  margin: 15px 20px;
+  width: 245px;
+}
+
+#foot-help h5,
+#foot-about h5,
+#foot-promo h5 {
+  margin: 7px 0;
+}
+
+.footmenu a:link {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.footmenu a:visited {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.footmenu a:hover {
+  color: #3395d7;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.footmenu a:active {
+  color: #3395d7;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.sponsors {
+  background: #252525;
+  height: 75px;
+  width: 100%;
+}
+
+.sponsors img {
+  margin: 15px 28px 0;
+}
